@@ -1,7 +1,7 @@
 export default {
   generateUrl(state, payload) {
     state.urls.unshift(payload)
-    state.urls.splice(-1)
+    if (state.urls.length > 10) state.urls.splice(-1)
     state.lastUrl = payload.shortUrl
   },
   setUrls(state, payload) {
