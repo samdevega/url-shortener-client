@@ -10,6 +10,9 @@
 
 <script>
 export default {
+  emits: [
+    'generate-url',
+  ],
   data() {
     return {
       url: '',
@@ -35,7 +38,7 @@ export default {
         url: this.url,
       }
 
-      console.log(formData)
+      this.$emit('generate-url', formData)
     },
   },
 }
