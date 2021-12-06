@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style scoped>
-
+li {
+  padding: 0.5rem 0;
+}
 </style>

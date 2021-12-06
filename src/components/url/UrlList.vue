@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div>
     <ul>
       <url-item
         v-for="url in urls"
@@ -8,7 +8,7 @@
         :text="url.shortUrl"
       ></url-item>
     </ul>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -23,5 +23,8 @@ export default {
 </script>
 
 <style scoped>
-
+ul {
+  list-style: none;
+  padding: 0;
+}
 </style>

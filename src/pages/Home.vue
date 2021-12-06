@@ -1,9 +1,11 @@
 <template>
-  <h1>Let's shrink that URL!</h1>
-  <url-form @generate-url="generateUrl"></url-form>
-  <url-generated :url="lastUrl" v-if="lastUrl"></url-generated>
-  <h2 v-if="haveUrls">Latest Short URLs</h2>
-  <url-list :urls="urls"></url-list>
+  <section>
+    <h1>Let's shrink that URL!</h1>
+    <url-form @generate-url="generateUrl"></url-form>
+    <url-generated :url="lastUrl" v-if="lastUrl"></url-generated>
+    <h2 v-if="haveUrls">Latest Shortened URLs</h2>
+    <url-list :urls="urls"></url-list>
+  </section>
 </template>
 
 <script>
@@ -44,5 +46,14 @@ export default {
 </script>
 
 <style scoped>
-
+section {
+  background-color: #fefefe;
+  border: 1px solid #d3edee;
+  border-radius: 12px;
+  box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin: 4rem auto;
+  max-width: 900px;
+  text-align: center;
+}
 </style>

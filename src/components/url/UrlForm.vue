@@ -3,8 +3,8 @@
     <div>
       <label for="url">URL to shrink</label>
       <input type="url" id="url" ref="url" v-model.trim="url">
+      <base-button>Generate</base-button>
     </div>
-    <base-button>Generate</base-button>
   </form>  
 </template>
 

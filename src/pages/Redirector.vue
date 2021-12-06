@@ -1,5 +1,7 @@
 <template>
-  <h1>Redirecting...</h1>
+  <section>
+    <h1>Redirecting...</h1>
+  </section>
 </template>
 
 <script>
@@ -23,3 +25,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+section {
+  padding: 2rem;
+}
+</style>
